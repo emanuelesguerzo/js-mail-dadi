@@ -10,7 +10,7 @@ for (let i = 0; i < mails.length; i++) {
     }
 }
 
-if (accessGranted === true) {
+if (accessGranted) {
     console.log("Accesso eseguito! Bentornato!");
 } else {
     console.log("Accesso Negato! Controlla se hai scritto la mail correttamente e riprova.");

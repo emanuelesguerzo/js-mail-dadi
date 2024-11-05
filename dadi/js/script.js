@@ -5,10 +5,12 @@ const npcDice = Math.floor(Math.random() * 6) + 1;
 console.log(`Dado Giocatore: ${playerDice}
 Dado Avversario: ${npcDice}`);
 
+let message = "";
+
 if (playerDice > npcDice) {
-    console.log("Congratulazioni hai vinto!");
+    message = "Congratulazioni hai vinto!";
 } else if (playerDice === npcDice) {
-    console.log("Pareggio! Eri ad un soffio dalla vittoria!");
+    message = "Pareggio! Eri ad un soffio dalla vittoria!";
 } else {
-    console.log("Sconfitta! Riprova sarai piu' fortunato!");
+    message = "Sconfitta! Riprova sarai piu' fortunato!";
 }
